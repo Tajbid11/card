@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body>
+    <div class="sm:flex">
+        <!-- cards -->
+        <div class="w-84 h-48 relative bg-cover items-center justify-center sm:w-1/3 sm:h-screen" style="background-image: url('pic/bg-main-desktop.png');">
+            <!-- card back -->
+            <div class="w-48 h-28 sm:w-64 sm:h-40 absolute top-8 sm:left-24 shadow-md shadow-black sm:top-72  left-10 bg-cover  rounded-lg " 
+            style="background-image: url('pic/bg-card-back.png');">
+                <p class="pt-11 pl-40 sm:pl-56 sm:pt-[68px] text-sm text-white">000</p>
+            </div>
+            <!-- card up -->
+            <div class="w-48 h-28 sm:w-64 sm:h-40 sm:left-12 absolute top-24 left-4 bg-cover rounded-lg " 
+            style="background-image: url('pic/bg-card-front.png');">
+                <!-- circles -->
+                    <div class="flex relative">
+                    <!-- white circle -->
+                    <div class="h-8 w-8 bg-white rounded-full absolute top-3 left-2"></div>
+                    <!-- white border circle -->
+                    <div class="w-5 h-5 rounded-full border-white absolute top-5 left-12 border bg-[#603ae7]"></div>
+                    </div>
+                    <!-- card number -->
+                    <p class="text-center text-white  pt-14 sm:pt-20">0000 0000 0000 0000</p>
+                    <!-- texts -->
+                    <div class=" pt-18 sm:mt-2 flex justify-between text-xs text-white px-3">
+                        <p>JANE APPLESEED</p>
+                        <p>00/00</p>
+                    </div>
+            </div>
+        </div>
+        <div class="sm:w-2/3">
+            <form action="#" class="mt-12 items-center justify-center mx-auto  sm:pl-20 sm:mt-28 w-60 sm:w-72">
+                <!-- name -->
+                <div class="">
+                    <label for="name" class="text-slate-700 font-serif text-sm">CARD HOLDER NAME</label><br>
+                    <input type="text" id="name" placeholder="e.g. Jane Appleseed" class="border pl-2 pr-18 py-1 rounded-lg">
+                </div>
+                <!-- number -->
+                <div>
+                    <label for="number" class="text-slate-700 font-serif text-sm">CARD NUMBER</label><br>
+                    <input type="text" id="name" placeholder="e.g. Jane Appleseed" class="border pl-2 pr-18 py-1 rounded-lg">
+                </div>
+                <!-- last -->
+                <div class="flex gap-1">
+                    <!-- date -->
+                    <div>
+                        <label for="exp_date" class="text-slate-700 font-serif text-sm">EXP. DATE (MM/YY)</label><br>
+                        <input type="text" name="" id="exp_date" placeholder="Month/Year" class="border pl-2 w-36 py-1 rounded-lg">
+                    </div>
+                    <!-- cvc -->
+                    <div>
+                        <label for="cvc"  class="text-slate-700 font-serif text-sm ">CVC</label><br>
+                        <input type="text" placeholder="e.g. 123" class="border pl-2 w-16 py-1 rounded-lg">
+                    </div>
+                </div>
+                <button type="submit" class="font-serif block text-sm bg-[#220930] text-white mt-4 px-20 rounded-lg py-2">Confirm</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
